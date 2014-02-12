@@ -13,6 +13,6 @@ dependencies:
           PKG_CONFIG_PATH: '$HOME/$CIRCLE_PROJECT_REPONAME/libsigc++-2.2.9'
     - wget http://downloads.sourceforge.net/inkscape/inkscape-0.48.4.tar.gz
     - tar zxvf inkscape-0.48.4.tar.gz
-    - cd inkscape-0.48.4 && ./configure --prefix=$HOME CPPFLAGS="-I$HOME/include" LDFLAGS="-L$HOME/lib"
+    - cd inkscape-0.48.4 && ./configure --prefix=$HOME CPPFLAGS="-I$HOME/include" LDFLAGS="-L$HOME/lib":
         environment:
           PKG_CONFIG_PATH: '$HOME/$CIRCLE_PROJECT_REPONAME/libsigc++-2.2.9'
