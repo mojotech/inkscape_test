@@ -6,9 +6,9 @@ dependencies:
     - wget http://ftp.gnome.org/pub/GNOME/sources/libsigc++/2.2/libsigc++-2.2.10.tar.bz2
     - tar jxvf libsigc++-2.2.10.tar.bz2
     - cd libsigc++-2.2.10/ && ./configure --prefix=$HOME --disable-shared --enable-static && make && make install
-    - wget http://ftp.gnome.org/pub/GNOME/sources/glibmm/2.39/glibmm-2.39.3.tar.xz
-    - tar Jxvf glibmm-2.39.3.tar.xz
-    - cd glibmm-2.39.3 && ./configure --prefix=$HOME --disable-shared  --enable-static && make && make install:
+    - wget http://ftp.gnome.org/pub/GNOME/sources/glibmm/2.30/glibmm-2.30.0.tar.xz
+    - tar Jxvf glibmm-2.30.0.tar.xz
+    - cd glibmm-2.30.0 && ./configure --prefix=$HOME --disable-shared  --enable-static && make && make install:
         environment:
           PKG_CONFIG_PATH: '$HOME/$CIRCLE_PROJECT_REPONAME/libsigc++-2.2.10'
     - wget http://downloads.sourceforge.net/inkscape/inkscape-0.48.4.tar.gz
