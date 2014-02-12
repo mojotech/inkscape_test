@@ -10,7 +10,7 @@ dependencies:
     - tar jxvf glibmm-2.28.2.tar.bz2
     - 'cd glibmm-2.28.2 && ./configure --prefix=$HOME --disable-shared  --enable-static && make && make install':
       environment:
-        PKG_CONFIG_PATH: $HOME/$CIRCLE_PROJECT_REPONAME/glibmm-2.28.2
+        PKG_CONFIG_PATH: '$HOME/$CIRCLE_PROJECT_REPONAME/glibmm-2.28.2'
     - wget http://downloads.sourceforge.net/inkscape/inkscape-0.48.4.tar.gz
     - tar zxvf inkscape-0.48.4.tar.gz
     - cd inkscape-0.48.4 && ./configure --prefix=$HOME CPPFLAGS="-I$HOME/include" LDFLAGS="-L$HOME/lib"
